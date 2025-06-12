@@ -1,12 +1,86 @@
-# React + Vite
+# Portfolio Dashboard - React & Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive portfolio dashboard built as part of the OneVarsity internship assignment. The application is created using modern web technologies including React, Redux Toolkit for state management, and Tailwind CSS for styling. It features a collapsible sidebar, a theme toggle for light/dark mode, and mock content sections for a complete user interface.
 
-Currently, two official plugins are available:
+## Screenshot
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![alt text](image.png)
+![alt text](image-1.png)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+-   **Responsive Design**: Fully responsive layout that works on all screen sizes, from mobile to desktop.
+-   **Collapsible Sidebar**: A functional sidebar that can be expanded or collapsed, with its state managed globally by Redux.
+-   **Theme Toggling**: Switch between a light and a dark theme. The theme preference is managed by Redux and applied globally.
+-   **Reusable Components**: Built with a component-driven architecture, featuring reusable `Button` and `Card` components with multiple variants.
+-   **Content Sections**: Includes mock content for an Overview, Projects, and Contact section.
+-   **Smooth Scrolling**: Clicking on sidebar navigation links smoothly scrolls the user to the corresponding content section.
+-   **Modern Tooling**: Set up with Vite for a fast and efficient development experience.
+
+---
+
+## Tech Stack
+
+-   **Framework**: [React.js](https://reactjs.org/) (v18+)
+-   **Build Tool**: [Vite](https://vitejs.dev/)
+-   **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Language**: JavaScript + JSX
+
+---
+
+## Getting Started
+
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+-   [Node.js](https://nodejs.org/en/) (v16 or later recommended)
+-   [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/portfolio-dashboard.git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd portfolio-dashboard
+    ```
+
+3.  **Install the dependencies:**
+    ```bash
+    npm install
+    ```
+    or if you use yarn:
+    ```bash
+    yarn install
+    ```
+
+### Running the Application
+
+Once the installation is complete, you can run the development server:
+
+```bash
+npm run dev
+```
+
+This will start the Vite development server. Open your browser and navigate to http://localhost:5173 (or the port shown in your terminal) to see the application running.
+
+## Redux State Management
+Redux Toolkit is used to manage the application's global state in a simple and predictable way.
+
+- themeSlice.js: Manages the isDarkMode boolean state. The toggleTheme action flips this value, which is then used in the top-level App.jsx component to apply the 'dark' class to the root element.
+
+- sidebarSlice.js: Manages the sidebar's visibility.
+
+---
+
+## License
+This project is licensed under the MIT License.
