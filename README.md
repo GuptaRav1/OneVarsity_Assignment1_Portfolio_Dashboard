@@ -4,8 +4,8 @@ This is a responsive portfolio dashboard built as part of the OneVarsity interns
 
 ## Screenshot
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](/public/image.png)
+![alt text](/public/image-1.png)
 
 
 ---
@@ -46,15 +46,10 @@ Make sure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/portfolio-dashboard.git
+    git clone https://github.com/GuptaRav1/OneVarsity_Assignment1_Portfolio_Dashboard.git
     ```
 
-2.  **Navigate to the project directory:**
-    ```bash
-    cd portfolio-dashboard
-    ```
-
-3.  **Install the dependencies:**
+2.  **Install the dependencies:**
     ```bash
     npm install
     ```
